@@ -1,0 +1,3 @@
+# FashionFreak 
+This Website is based on the fashion world in which you can buy any of the product singin in your accout FAQs in other words we can say it is the copy of Flipkart , 
+Amazon more other . the language used in the website are CSS,HTML,JSS.....
