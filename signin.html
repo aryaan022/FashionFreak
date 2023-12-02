@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGNIN PAGE</title>
+    <style>
+        body {
+            background-image: url("backsign.jpg");
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .abc {
+            width: 400px;
+            height: 350px;
+            background-color: white;
+            position: absolute;
+            top: 15%;
+            left: 38%;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        input {
+            width: 250px;
+            line-height: 25px;
+            background-color: rgba(128, 128, 128, 0.3);
+            border-radius: 10px;
+        }
+
+        a {
+            text-decoration-line: none;
+        }
+
+        .btn button {
+            width: 20%;
+            border-radius: 10px;
+            background-color: rgb(18, 18, 158);
+            color: white;
+        }
+        button[type="submit"]{
+            width: 20%;
+            border-radius: 10px;
+            background-color: rgb(18, 18, 158);
+            color: white;
+            margin: 10px;
+        }
+        a[href="layoutfashion.html"]{
+            float: right;
+            margin-top: -15px;
+            margin-right: 10px;
+        }
+        #name,#myemail,#mypassword{
+            float: right;
+            margin-right:50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="abc">
+        <h1 id="title">Sign Up</h1>
+        <form id="signform">
+            <div id="namefield">
+                <img src="profile.png" alt="Error">
+                <input name="myname" id="name" placeholder="  Enter your Name" required>
+            </div><br>
+            <div>
+                <img src="emails.png" alt="Error">
+                <input name="email" id="myemail" placeholder="  Enter your Email" required>
+            </div><br>
+            <div>
+                <img src="passwd.png" alt="Error">
+                <input name="password" id="mypassword" placeholder="  Enter your password" required>
+            </div>
+            <p>Forgot Password?<a href="#"> Click Here</a></p>
+            <div class="btn">
+                <button type="button" id="signupbtn">Sign Up</button>
+                <button type="button" id="signinbtn">Sign In</button>
+            </div><br>
+            <button type="submit">Submit</button><br>
+            <a href="layoutfashion.html" target="_blank">Skip</a>
+        </form>
+    </div>
+    </form>
+    </div>
+
+    <script>
+        let signupbtn = document.getElementById("signupbtn");
+        let signinbtn = document.getElementById("signinbtn");
+        let namefield = document.getElementById("namefield");
+        let title = document.getElementById("title");
+
+        signinbtn.onclick = function () {
+
+            namefield.style.display = 'none';
+            title.innerHTML = "Sign In";
+
+        }
+        signupbtn.onclick = function () {
+            namefield.style.display="block";
+            title.innerHTML = "Sign Up";
+        }
+
+    </script>
+</body>
+</html>
